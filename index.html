@@ -39,26 +39,24 @@
 			<h1 style="
 				color: #fff;
 				font-size: 5em;
-				font-weight: 400;
+				font-weight: 400; margin-bottom: 0.5em; margin-top: -0.5em;
 				font-family: 'Passion One', cursive; text-align: center;">Projects</h1>
 			<!-- Boxes -->
 			<div class="thumbnails">
-
 				<div class="box">
-					<a href="#" class="image fit"><img src="images/riona1.PNG" alt="" /></a>
+					<a data-toggle="modal" data-target="#project1" class="image fit"><img src="images/riona_dashboard.PNG" alt="" height="180px"/></a>
 					<div class="inner">
 						<h3>Clinical Information System</h3>
 						<p>Web-based clinical information system created to accelerate the delivery and storing of
 							clinical data such as medical records, inventory, etc.</p>
-						<p><strong>Tech stack : </strong>PHP, CodeIgniter, MySQL, JavaScript</p>
+						<p><strong>Tech stack : </strong>PHP, CodeIgniter, MySQL, jQuery</p>
 						<button type="button" class="btn button fit btn-default" data-toggle="modal"
 							data-target="#project1">See details <i class="icon fa-external-link"></i>
 						</button>
 					</div>
 				</div>
-
 				<div class="box">
-					<a href="#" class="image fit"><img src="images/pertamina1.PNG" alt="" /></a>
+					<a data-toggle="modal" data-target="#project2" class="image fit"><img src="images/pertamina1.PNG" alt="" height="180px" /></a>
 					<div class="inner">
 						<h3>Contract Bills Reminder System</h3>
 						<p>Created to speed up contract bills data management and send emails every month automatically
@@ -69,16 +67,14 @@
 						</button>
 					</div>
 				</div>
-
 				<div class="box">
-					<a href="#" class="image fit"><img src="images/ittr1.PNG" alt="" /></a>
+					<a class="image fit"><img src="images/ittr1.PNG" alt="" height="180px" /></a>
 					<div class="inner">
 						<h3>ITTR English Course Company Profile</h3>
 						<p>Created with the aim to inform people more about ITTR English Course's profile, testimonies,
 							programs, etc.</p>
 						<p><strong>Tech stack : </strong>WordPress, HTML, CSS, MySQL</p>
-						<a href="https://ittrenglishcourse.com/" class="button fit" target="_blank">Go to website <i
-								class="icon fa-external-link"></i></a>
+						<a class="button fit" target="_blank" id="ittr">Go to website <i class="icon fa-external-link"></i></a>
 					</div>
 				</div>
 
@@ -99,19 +95,23 @@
 							<li data-target="#project1CarouselIndicators" data-slide-to="1"></li>
 							<li data-target="#project1CarouselIndicators" data-slide-to="2"></li>
 							<li data-target="#project1CarouselIndicators" data-slide-to="3"></li>
+							<li data-target="#project1CarouselIndicators" data-slide-to="4"></li>
 						</ol>
 						<div class="carousel-inner">
 							<div class="carousel-item active">
-								<img class="d-block w-100" src="images/riona4.PNG" alt="">
+								<img class="d-block w-100" src="images/riona_login.PNG" alt="" height="385px">
 							</div>
 							<div class="carousel-item">
-								<img class="d-block w-100" src="images/riona1.PNG" alt="">
+								<img class="d-block w-100" src="images/riona_dashboard.PNG" alt="" height="385px">
 							</div>
 							<div class="carousel-item">
-								<img class="d-block w-100" src="images/riona2.PNG" alt="">
+								<img class="d-block w-100" src="images/riona_rm.PNG" alt="" height="385px">
 							</div>
 							<div class="carousel-item">
-								<img class="d-block w-100" src="images/riona3.PNG" alt="">
+								<img class="d-block w-100" src="images/riona_pasien.PNG" alt="" height="385px">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100" src="images/riona_transaksi.PNG" alt="" height="385px">
 							</div>
 						</div>
 						<a class="carousel-control-prev" href="#project1CarouselIndicators" role="button"
@@ -144,13 +144,13 @@
 						</ol>
 						<div class="carousel-inner">
 							<div class="carousel-item active">
-								<img class="d-block w-100" src="images/pertamina1.PNG" alt="">
+								<img class="d-block w-100" src="images/pertamina1.PNG" alt="" height="385px">
 							</div>
 							<div class="carousel-item">
-								<img class="d-block w-100" src="images/pertamina2.PNG" alt="">
+								<img class="d-block w-100" src="images/pertamina2.PNG" alt="" height="385px">
 							</div>
 							<div class="carousel-item">
-								<img class="d-block w-100" src="images/pertamina3.PNG" alt="">
+								<img class="d-block w-100" src="images/pertamina3.PNG" alt="" height="385px">
 							</div>
 						</div>
 						<a class="carousel-control-prev" href="#project2CarouselIndicators" role="button"
@@ -172,8 +172,8 @@
 	<!-- Footer -->
 	<footer id="footer">
 		<div class="inner">
-			<h2>Currently looking for a position as a back end developer or mobile developer</h2>
-
+			<h2>Currently looking for a position as a web developer</h2>
+			<p>Get in touch with me</p>
 			<ul class="icons">
 				<li><a href="https://www.linkedin.com/in/mahfuzanhadi/" class="icon fa-linkedin" target="_blank"><span
 							class="label">LinkedIn</span></a></li>
@@ -197,6 +197,11 @@
 	<script src="assets/js/skel.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script>
+		$('#ittr').click(function(){
+			window.open('https://ittrenglishcourse.com/', '_blank')
+		});
+	</script>
 
 </body>
 
