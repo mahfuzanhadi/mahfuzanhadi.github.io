@@ -13,21 +13,71 @@
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 	<link href="favicon.png" type="image/png" rel="icon" />
+	<style>
+		header p {
+			padding: 1em 7em 1.5em 7em !important;
+		}
+
+		h3 {
+			font-size: 100%;
+		}
+
+		.title {
+			color: #fff;
+			font-size: 5em;
+			font-weight: 400;
+			margin-bottom: 0.5em;
+			margin-top: -0.5em;
+			font-family: 'Passion One', cursive;
+			text-align: center;
+		}
+
+		.pop-up {
+			height: 395px !important;
+		}
+
+		@media screen and (max-width: 768px) {
+			body {
+				font-size: 70%;
+			}
+
+			.pop-up {
+				height: 200px !important;
+			}
+
+			.title {
+				font-size: 3em;
+			}
+
+			header p {
+				padding: 0 0 1.5em 0 !important;
+			}
+		}
+
+		@media only screen and (min-width: 600px) {
+
+			body {
+				font-size: 100%;
+			}
+
+			.title {
+				font-size: 5em;
+			}
+
+			.pop-up {
+				height: 395px !important;
+			}
+		}
+	</style>
 </head>
 
 <body id="top">
-
-	<!-- Banner -->
-	<!--
-				To use a video as your background, set data-video to the name of your video without
-				its extension (eg. images/banner). Your video must be available in both .mp4 and .webm
-				formats to work correctly.
-			-->
 	<section id="banner" data-video="images/banner">
 		<div class="inner">
 			<header>
 				<h1>Mahfuzan Hadi Wicaksono</h1>
-				<p>Hello! I am a passionate developer but more importantly, I am passionate about technology </p>
+				<p>Hello! I am a last year student and web developer with excellent problem-solving skills and fast
+					learning ability. I am motivated to constantly develop my skills and grow professionally.</p>
 			</header>
 			<a href="#main" class="more">Learn More</a>
 		</div>
@@ -36,15 +86,12 @@
 	<!-- Main -->
 	<div id="main">
 		<div class="inner">
-			<h1 style="
-				color: #fff;
-				font-size: 5em;
-				font-weight: 400; margin-bottom: 0.5em; margin-top: -0.5em;
-				font-family: 'Passion One', cursive; text-align: center;">Projects</h1>
+			<h1 class="title">Projects</h1>
 			<!-- Boxes -->
 			<div class="thumbnails">
 				<div class="box">
-					<a data-toggle="modal" data-target="#project1" class="image fit"><img src="images/riona_dashboard.PNG" alt="" height="180px"/></a>
+					<a data-toggle="modal" data-target="#project1" class="image fit"><img
+							src="images/riona_dashboard.PNG" alt="" height="180px" /></a>
 					<div class="inner">
 						<h3>Clinical Information System</h3>
 						<p>Web-based clinical information system created to accelerate the delivery and storing of
@@ -56,13 +103,14 @@
 					</div>
 				</div>
 				<div class="box">
-					<a data-toggle="modal" data-target="#project2" class="image fit"><img src="images/pertamina1.PNG" alt="" height="180px" /></a>
+					<a data-toggle="modal" data-target="#project2" class="image fit"><img src="images/pertamina1.PNG"
+							alt="" height="180px" /></a>
 					<div class="inner">
 						<h3>Contract Bills Reminder System</h3>
 						<p>Created to speed up contract bills data management and send emails every month automatically
 							using Hangfire.</p>
 						<p><strong>Tech stack : </strong>C#, ASP.NET MVC, SQL Server</p>
-						<button type="button" class="btn button fit btn-default" data-toggle="modal"
+						<button type="button" class="btn button fit btn-default style2" data-toggle="modal"
 							data-target="#project2">See details <i class="icon fa-external-link"></i>
 						</button>
 					</div>
@@ -74,7 +122,9 @@
 						<p>Created with the aim to inform people more about ITTR English Course's profile, testimonies,
 							programs, etc.</p>
 						<p><strong>Tech stack : </strong>WordPress, HTML, CSS, MySQL</p>
-						<a class="button fit" target="_blank" id="ittr">Go to website <i class="icon fa-external-link"></i></a>
+						<button type="button" class="btn button fit btn-default" id="ittr">Go to website <i
+								class="icon fa-external-link"></i>
+						</button>
 					</div>
 				</div>
 
@@ -86,7 +136,7 @@
 	<!-- Modal -->
 	<div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="project1Label"
 		aria-hidden="true">
-		<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
 			<div class="modal-content">
 				<div class="modal-body">
 					<div id="project1CarouselIndicators" class="carousel slide" data-ride="carousel">
@@ -99,19 +149,19 @@
 						</ol>
 						<div class="carousel-inner">
 							<div class="carousel-item active">
-								<img class="d-block w-100" src="images/riona_login.PNG" alt="" height="385px">
+								<img class="d-block w-100 pop-up" src="images/riona_login.PNG" alt="">
 							</div>
 							<div class="carousel-item">
-								<img class="d-block w-100" src="images/riona_dashboard.PNG" alt="" height="385px">
+								<img class="d-block w-100 pop-up" src="images/riona_dashboard.PNG" alt="">
 							</div>
 							<div class="carousel-item">
-								<img class="d-block w-100" src="images/riona_rm.PNG" alt="" height="385px">
+								<img class="d-block w-100 pop-up" src="images/riona_rm.PNG" alt="">
 							</div>
 							<div class="carousel-item">
-								<img class="d-block w-100" src="images/riona_pasien.PNG" alt="" height="385px">
+								<img class="d-block w-100 pop-up" src="images/riona_pasien.PNG" alt="">
 							</div>
 							<div class="carousel-item">
-								<img class="d-block w-100" src="images/riona_transaksi.PNG" alt="" height="385px">
+								<img class="d-block w-100 pop-up" src="images/riona_transaksi.PNG" alt="">
 							</div>
 						</div>
 						<a class="carousel-control-prev" href="#project1CarouselIndicators" role="button"
@@ -133,7 +183,7 @@
 	<!-- Modal -->
 	<div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="project2Label"
 		aria-hidden="true">
-		<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
 			<div class="modal-content">
 				<div class="modal-body">
 					<div id="project2CarouselIndicators" class="carousel slide" data-ride="carousel">
@@ -144,13 +194,13 @@
 						</ol>
 						<div class="carousel-inner">
 							<div class="carousel-item active">
-								<img class="d-block w-100" src="images/pertamina1.PNG" alt="" height="385px">
+								<img class="d-block w-100 pop-up" src="images/pertamina1.PNG" alt="">
 							</div>
 							<div class="carousel-item">
-								<img class="d-block w-100" src="images/pertamina2.PNG" alt="" height="385px">
+								<img class="d-block w-100 pop-up" src="images/pertamina2.PNG" alt="">
 							</div>
 							<div class="carousel-item">
-								<img class="d-block w-100" src="images/pertamina3.PNG" alt="" height="385px">
+								<img class="d-block w-100 pop-up" src="images/pertamina3.PNG" alt="">
 							</div>
 						</div>
 						<a class="carousel-control-prev" href="#project2CarouselIndicators" role="button"
@@ -173,7 +223,7 @@
 	<footer id="footer">
 		<div class="inner">
 			<h2>Currently looking for a position as a web developer</h2>
-			<p>Get in touch with me</p>
+			<p>Get in touch with me!</p>
 			<ul class="icons">
 				<li><a href="https://www.linkedin.com/in/mahfuzanhadi/" class="icon fa-linkedin" target="_blank"><span
 							class="label">LinkedIn</span></a></li>
@@ -181,7 +231,7 @@
 							class="label">Github</span></a></li>
 				<li><a href="https://stackoverflow.com/users/13782568/mfznhd" class="icon fa-stack-overflow"
 						target="_blank"><span class="label">Stack Overflow</span></a></li>
-				<li><a href="pdf/CV_MAHFUZAN HADI WICAKSONO.pdf" class="icon fa-file-pdf-o"><span
+				<li><a href="pdf/MAHFUZAN HADI WICAKSONO_CV.pdf" class="icon fa-file-pdf-o"><span
 							class="label">CV</span></a></li>
 				<li><a href="mailto:mahfuzanhadi98@gmail.com" email class="icon fa-envelope"><span
 							class="label">Email</span></a></li>
@@ -198,7 +248,7 @@
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 	<script>
-		$('#ittr').click(function(){
+		$('#ittr').click(function () {
 			window.open('https://ittrenglishcourse.com/', '_blank')
 		});
 	</script>
