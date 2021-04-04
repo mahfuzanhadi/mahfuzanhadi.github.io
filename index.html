@@ -76,8 +76,9 @@
 		<div class="inner">
 			<header>
 				<h1>Mahfuzan Hadi Wicaksono</h1>
-				<p>Hello! I am a final year student and web developer with excellent problem-solving skills and fast
-					learning ability. I am motivated to constantly develop my skills and grow professionally.</p>
+				<p>Hello! I am an Informatics Engineering fresh graduate and web developer with excellent
+					problem-solving skills and fast learning ability. I am motivated to constantly develop my skills and
+					grow professionally.</p>
 			</header>
 			<a href="#main" class="more">Learn More</a>
 		</div>
@@ -90,6 +91,18 @@
 			<!-- Boxes -->
 			<div class="thumbnails">
 				<div class="box">
+					<a class="image fit"><img src="images/ppe1.PNG" alt="" height="180px" /></a>
+					<div class="inner">
+						<h3>PPEConcierge</h3>
+						<p>We make personal protective equipment kits and offer a concierge service to attend events,
+							making you and your guests feel safe and protected.</p>
+						<p><strong>Tech stack : </strong>WordPress, WooCommerce</p>
+						<button type="button" class="btn button fit btn-default" id="ppeconcierge">Go to website
+							<i class="icon fa-external-link"></i>
+						</button>
+					</div>
+				</div>
+				<div class="box">
 					<a data-toggle="modal" data-target="#project1" class="image fit"><img
 							src="images/riona_dashboard.PNG" alt="" height="180px" /></a>
 					<div class="inner">
@@ -97,7 +110,7 @@
 						<p>Web-based clinical information system created to accelerate the delivery and storing of
 							clinical data such as medical records, inventory, etc.</p>
 						<p><strong>Tech stack : </strong>CodeIgniter, MySQL, jQuery, Bootstrap</p>
-						<button type="button" class="btn button fit btn-default" data-toggle="modal"
+						<button type="button" class="btn button fit btn-default style2" data-toggle="modal"
 							data-target="#project1">See details <i class="icon fa-external-link"></i>
 						</button>
 					</div>
@@ -110,7 +123,7 @@
 						<p>Created to speed up contract bills data management and send emails every month automatically
 							using Hangfire.</p>
 						<p><strong>Tech stack : </strong>C#, ASP.NET MVC, SQL Server</p>
-						<button type="button" class="btn button fit btn-default style2" data-toggle="modal"
+						<button type="button" class="btn button fit btn-default style3" data-toggle="modal"
 							data-target="#project2">See details <i class="icon fa-external-link"></i>
 						</button>
 					</div>
@@ -231,7 +244,7 @@
 							class="label">Github</span></a></li>
 				<li><a href="https://stackoverflow.com/users/13782568/mfznhd" class="icon fa-stack-overflow"
 						target="_blank"><span class="label">Stack Overflow</span></a></li>
-				<li><a href="pdf/MAHFUZAN HADI WICAKSONO_CV.pdf" class="icon fa-file-pdf-o"><span
+				<li><a href="pdf/CV_MAHFUZAN HADI WICAKSONO.pdf" class="icon fa-file-pdf-o"><span
 							class="label">CV</span></a></li>
 				<li><a href="mailto:mahfuzanhadi98@gmail.com" email class="icon fa-envelope"><span
 							class="label">Email</span></a></li>
@@ -248,6 +261,9 @@
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 	<script>
+		$('#ppeconcierge').click(function () {
+			window.open('https://ppeconcierge.com/', '_blank')
+		});
 		$('#ittr').click(function () {
 			window.open('https://ittrenglishcourse.com/', '_blank')
 		});
