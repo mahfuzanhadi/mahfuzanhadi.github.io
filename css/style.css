@@ -104,6 +104,10 @@ html {
     footer.footer-area {
         padding: 3rem 0 !important;
     }
+
+    .title-text {
+        font-family: 'Comic Sans';
+    }
 }
 
 /* End Banner Area */
