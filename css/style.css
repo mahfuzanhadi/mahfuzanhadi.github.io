@@ -3,15 +3,18 @@
 
 
 /* css variables */
-@import url(./variables.css);
+@import url(./partials/_variables.css);
 
 /* import global styling */
-@import url(./global.css);
+@import url(./partials/_global.css);
 
 html {
     scroll-behavior: smooth;
 }
 
+body {
+    font: normal 500 15px/2px "Montserrat";
+}
 
 /* start navigation */
 
@@ -72,8 +75,6 @@ html {
     font-size: 5rem;
 }
 
-
-
 .site-main .site-banner .site-title h4 {
     font-size: 1.5rem;
 }
@@ -83,28 +84,7 @@ html {
     width: 90rem;
 }
 
-/* If the screen size is 600px wide or less, hide the element */
-@media only screen and (max-width: 600px) {
-    .site-main .site-banner .site-title h1 {
-        font-size: 3rem;
-    }
 
-    .site-main .site-banner .banner-image>img {
-        padding: 3rem 0;
-    }
-
-    #about {
-        margin-bottom: 3rem !important;
-    }
-
-    #projects {
-        margin-bottom: 0 !important;
-    }
-
-    footer.footer-area {
-        padding: 3rem 0 !important;
-    }
-}
 
 /* End Banner Area */
 
@@ -116,7 +96,7 @@ html {
 
 .site-main .about-area .about-title h2>span {
     display: block;
-    font: normal bold 49px/ 60px var(--roboto);
+    font: normal bold 49px/ 60px 'Bubblegum Sans';
     letter-spacing: 21px;
 }
 
@@ -256,7 +236,7 @@ html {
 }
 
 .site-main .project-area .grid .our-project>.title h4 {
-    font: normal 700 25px/12px var(--roboto);
+    font: normal 700 2rem 'Montserrat';
 }
 
 .site-main .project-area .grid .our-project .img a:hover img {
