@@ -3,10 +3,10 @@
 
 
 /* css variables */
-@import url(./partials/_variables.css);
+@import url(./partials/variables.css);
 
 /* import global styling */
-@import url(./partials/_global.css);
+@import url(./partials/global.css);
 
 html {
     scroll-behavior: smooth;
@@ -27,7 +27,7 @@ body {
 }
 
 .header_area .main-menu .nav-item .nav-link {
-    font: normal 500 15px/2px var(--roboto);
+    font: normal 500 1.2rem 'Bubblegum Sans';
     text-transform: uppercase;
     padding: 1.7rem;
     color: var(--title-color);
@@ -43,7 +43,7 @@ body {
 .header_area .main-menu .navbar-nav a:hover {
     background: var(--gradient-color);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: #4458dc;
     background-clip: text;
 }
 

@@ -2684,16 +2684,23 @@ textarea.form-control.is-invalid {
 }
 
 .btn {
-    padding: .8rem 2.2rem;
-    font: normal 500 16px/20px 'Bubblegum Sans';
-    position: relative;
-    border: 3px solid transparent;
-    border-radius: 4px;
-    background: var(--gradient-color);
-    background-clip: padding-box;
+    display: inline-block;
+    font-weight: 400;
+    font-family: 'Bubblegum Sans';
     color: whitesmoke;
-    transition: background .6s ease;
-    box-shadow: var(--box-shadow);
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #4458dc;
+    border: 1px solid #4458dc;
+    padding: 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
 }
 
 @media (prefers-reduced-motion:reduce) {
@@ -2703,9 +2710,8 @@ textarea.form-control.is-invalid {
 }
 
 .btn:hover {
-    background: whitesmoke;
-    background-clip: padding-box;
-    color: black;
+    color: #212529;
+    text-decoration: none
 }
 
 .btn.focus,
