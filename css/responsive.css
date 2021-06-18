@@ -89,6 +89,14 @@
         width: 20rem;
         margin: 5%;
     }
+
+    #about {
+        margin-bottom: 6rem !important;
+    }
+
+    #projects {
+        margin-bottom: 3rem !important;
+    }
 }
 
 
