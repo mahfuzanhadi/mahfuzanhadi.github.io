@@ -97,6 +97,20 @@
     #projects {
         margin-bottom: 3rem !important;
     }
+
+    .header_area .main-menu .navbar .navbar-brand{
+        padding: 0 2rem 0 1rem;
+    }
+
+    .navbar-nav {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none
+    }
 }
 
 
